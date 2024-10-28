@@ -1,12 +1,12 @@
-import { Boot } from "./scenes/Boot";
-import { Game } from "./scenes/Game";
-import { GameOver } from "./scenes/GameOver";
-import { MainMenu } from "./scenes/MainMenu";
-import { Preloader } from "./scenes/Preloader";
-import { Hud } from "./scenes/Hud";
+import { Game } from "./scenes/Game.js";
+import { Boot } from "./scenes/Boot.js";
+import { Preloader } from "./scenes/Preloader.js";
+import { ChooseLanguage } from "./scenes/ChooseLanguage.js";
+import { MainMenu } from "./scenes/MainMenu.js";
+import { GameOver } from "./scenes/GameOver.js";
+import { Hud } from "./scenes/Hud.js";
 
 //  Find out more information about the Game Config at:
-//  https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig
 const config = {
   type: Phaser.AUTO,
   width: 1024,
@@ -24,7 +24,8 @@ const config = {
       debug: false,
     },
   },
-  scene: [Boot, Preloader, MainMenu, Game, GameOver, Hud],
+  scene: [Boot, Preloader, ChooseLanguage, MainMenu, Game, GameOver, Hud],
 };
 
-export default new Phaser.Game(config);
+// Inicializa el juego
+const game = new Phaser.Game(config);
