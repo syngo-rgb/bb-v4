@@ -9,15 +9,15 @@ This project is a continuation of the BREAK BRICK game, developed as part of Pra
   - **IDX Google**: This project uses [idx.google.com](https://idx.google.com) to manage the development environment and streamline deployment processes.
 
 ## Installation
-1. Clone the repository:
+
    ```bash
    git clone https://github.com/syngo-rgb/bb-v5.git
-2. Navigate to the project directory:
-cd breakbrick_v5
-3. Install the required dependencies:
+    cd breakbrick_v5
+    npm install
+    npm start
 
-To run the project locally, use the following command:
-npm start
+
+
 
 
 
